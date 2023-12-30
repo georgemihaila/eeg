@@ -47,3 +47,4 @@
 /home/qcd/Desktop/repos/EEG/EEG/bin/Debug/net8.0/SixLabors.Fonts.dll
 /home/qcd/Desktop/repos/EEG/EEG/bin/Debug/net8.0/SixLabors.ImageSharp.dll
 /home/qcd/Desktop/repos/EEG/EEG/bin/Debug/net8.0/SixLabors.ImageSharp.Drawing.dll
+/home/qcd/Desktop/repos/eeg/EEG/obj/Debug/net8.0/EEG.sourcelink.json

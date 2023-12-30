@@ -1,3 +1,6 @@
  
 *.raw
 *.eer
+bin/
+obj/
+*.log

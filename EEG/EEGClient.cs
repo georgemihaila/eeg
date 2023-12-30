@@ -88,7 +88,7 @@ namespace EEG
             catch (UnauthorizedAccessException)
             {
                 System.Console.WriteLine("Failed to open port.");
-                Console.WriteLine("Either the port is already open or you don't have permission to open it. Try running this program as root or do `sudo chmod $YOUR_USER /dev/ttyUSBN`");
+                Console.WriteLine("Either the port is already open or you don't have permission to open it.\r\nTry running this program as root or do\r\n`sudo chown $(whoami)) /dev/ttyUSBN`");
                 return;
             }
             catch (Exception ex)

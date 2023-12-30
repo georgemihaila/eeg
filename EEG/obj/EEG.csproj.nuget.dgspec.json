@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/qcd/Desktop/repos/EEG/EEG/EEG.csproj": {}
+    "/home/qcd/Desktop/repos/eeg/EEG/EEG.csproj": {}
   },
   "projects": {
-    "/home/qcd/Desktop/repos/EEG/EEG/EEG.csproj": {
+    "/home/qcd/Desktop/repos/eeg/EEG/EEG.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/qcd/Desktop/repos/EEG/EEG/EEG.csproj",
+        "projectUniqueName": "/home/qcd/Desktop/repos/eeg/EEG/EEG.csproj",
         "projectName": "EEG",
-        "projectPath": "/home/qcd/Desktop/repos/EEG/EEG/EEG.csproj",
+        "projectPath": "/home/qcd/Desktop/repos/eeg/EEG/EEG.csproj",
         "packagesPath": "/home/qcd/.nuget/packages/",
-        "outputPath": "/home/qcd/Desktop/repos/EEG/EEG/obj/",
+        "outputPath": "/home/qcd/Desktop/repos/eeg/EEG/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/qcd/.nuget/NuGet/NuGet.Config"

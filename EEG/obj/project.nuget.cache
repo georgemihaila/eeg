@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A3Zq8Ww2757SlKC5ScyjgwRKhYSFJ1Y/d5YZqjPbMt2WAS1Y7RrFfdY00tGSDR7nJHXS70Knv/XkzT9WgruqAw==",
+  "dgSpecHash": "Qc1+S4e4uWe9oVsPrfqhqlLUPl7vJJM9Nru8s0ghDM1wHLC2FvwTsziCguOuv1pIKssb9BgpoJh6vcTTwdrkeA==",
   "success": true,
-  "projectFilePath": "/home/qcd/Desktop/repos/EEG/EEG/EEG.csproj",
+  "projectFilePath": "/home/qcd/Desktop/repos/eeg/EEG/EEG.csproj",
   "expectedPackageFiles": [
     "/home/qcd/.nuget/packages/bitmiracle.libtiff.net/2.4.649/bitmiracle.libtiff.net.2.4.649.nupkg.sha512",
     "/home/qcd/.nuget/packages/csvhelper/30.0.1/csvhelper.30.0.1.nupkg.sha512",

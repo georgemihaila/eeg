@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EEG
-build_property.ProjectDir = /home/qcd/Desktop/repos/EEG/EEG/
+build_property.ProjectDir = /home/qcd/Desktop/repos/eeg/EEG/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
