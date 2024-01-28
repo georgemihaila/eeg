@@ -11,18 +11,16 @@ namespace EEG
   public class Program
   {
     #region InfluxDB
-
     const string bucket = "EEG";
     const string org = "CCE";
     const string token = "9_23SxQUTuSrHFh14TVMiVV66wKxrZXDWb4srsHBsZF0mf456e2eXeohYUBku9JFT-4gmKbEZggAlLymO1eKuw==";
-
     #endregion
     private static readonly Stopwatch PerformanceStopwatch = new();
     private static readonly Stopwatch GlobalStopwatch = Stopwatch.StartNew();
     private static UInt32 MeasurementBytesRead = 0;
-    private static readonly EEGClient _EEGClient = new("/dev/ttyUSB1", 57600);
+    private static EEGClient _EEGClient;
     private static readonly IConsole MainWindow = Window.OpenBox($"Olimex EEG console");
-    private static readonly IConsole TopWindow = MainWindow.SplitTop($"{_EEGClient.PortName}");
+    private static IConsole TopWindow;
     private static readonly IConsole BottomWindow = MainWindow.SplitBottom($"Vizualization");
     private static readonly IConsole FFTWindow = BottomWindow.SplitRight($"FFT");
     private static readonly IConsole BarsWindow = BottomWindow.SplitLeft($"Amplitude");
@@ -30,6 +28,17 @@ namespace EEG
     private static long _startupTime;
     public static void Main(string[] args)
     {
+      var device = "/dev/ttyUSB1";
+      if (args.Length == 0)
+      {
+        Console.WriteLine("No serial port specified. Assuming /dev/ttyUSB1...");
+      }
+      else
+      {
+        device = args[0];
+      }
+      _EEGClient = new(device, 57600);
+      TopWindow = MainWindow.SplitTop($"{_EEGClient.PortName}");
       Thread.Sleep(1000);
       _startupTime = DateTime.Now.Ticks * 100;
       Console.CursorVisible = false;
